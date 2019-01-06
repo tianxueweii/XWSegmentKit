@@ -1,0 +1,16 @@
+PODS:
+  - XWSegmentKit (0.0.1)
+
+DEPENDENCIES:
+  - XWSegmentKit (from `../`)
+
+EXTERNAL SOURCES:
+  XWSegmentKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XWSegmentKit: 63c62d99e418f5492b85ccc50f9ea8441ce88b87
+
+PODFILE CHECKSUM: b6508963dae806ecd340ce116d4f1d1642bd7b4e
+
+COCOAPODS: 1.5.3

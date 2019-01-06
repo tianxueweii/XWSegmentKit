@@ -6,7 +6,7 @@
 //  Copyright (c) 2019 tianxueweii. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @interface XWSegmentViewController : UIViewController
 

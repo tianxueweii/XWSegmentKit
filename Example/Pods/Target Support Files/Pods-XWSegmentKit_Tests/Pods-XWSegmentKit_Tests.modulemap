@@ -1,0 +1,6 @@
+framework module Pods_XWSegmentKit_Tests {
+  umbrella header "Pods-XWSegmentKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
