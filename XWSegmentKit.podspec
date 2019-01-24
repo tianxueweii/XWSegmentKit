@@ -11,32 +11,22 @@ Pod::Spec.new do |s|
   s.version          = '0.0.1'
   s.summary          = '分段导航控制器'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    分段导航组件库：XWSegmentKit.
+    最低兼容iOS8版本
                        DESC
 
   s.homepage         = 'https://github.com/tianxueweii/XWSegmentKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'tianxueweii' => '382447269@qq.com' }
   s.source           = { :git => 'https://github.com/tianxueweii/XWSegmentKit.git', :tag => s.version }
+  
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'XWSegmentKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'XWSegmentKit' => ['XWSegmentKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+ 
 end

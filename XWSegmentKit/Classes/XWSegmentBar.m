@@ -51,6 +51,10 @@ NSString *const kXWSegmentBarItemKey = @"com.segmentKit.XWSegmentBarItemKey";
 }
 
 - (void)initializeSubViews{
+    if (self.mainScrollBar) {
+        [self.mainScrollBar removeFromSuperview];
+        self.mainScrollBar = nil;
+    }
     [self addSubview:self.mainScrollBar];
 }
 
@@ -66,16 +70,13 @@ NSString *const kXWSegmentBarItemKey = @"com.segmentKit.XWSegmentBarItemKey";
 }
 
 - (void)xw_segment_update{
-    
-    if (self.mainScrollBar) {
-        [self.mainScrollBar removeFromSuperview];
-        self.mainScrollBar = nil;
-    }
-    [self p_setUpContextsWithDataSource];
-    [self initializeSubViews];
     [self layoutIfNeeded];
-    self.flowLayout.itemSize = CGSizeMake(0, self.mainScrollBar.contentSize.height);
+    [self initializeSubViews];
+    
     [self p_setUpPointerWithDataSource];
+    [self p_setUpContextsWithDataSource];
+    
+    [self.mainScrollBar reloadData];
     [self xw_segment_setCurrentItemIndex:_currentIndex];
 }
 
@@ -253,13 +254,14 @@ NSString *const kXWSegmentBarItemKey = @"com.segmentKit.XWSegmentBarItemKey";
  初始化指针
  */
 - (void)p_setUpPointerWithDataSource{
-    if (!_pointer) {
-        if ([_dataSource respondsToSelector:@selector(xw_segment_pointer)]) {
-            _pointer = [_dataSource xw_segment_pointer];
-            [self.mainScrollBar addSubview:_pointer];
-            [self layoutIfNeeded];
-            _pointer.frame = CGRectMake(0, Segment_Bar_Height - _pointer.height - _pointer.paddingBottom, _pointer.width, _pointer.height);
-        }
+    if (_pointer) {
+        [_pointer removeFromSuperview];
+        _pointer = nil;
+    }
+    if ([_dataSource respondsToSelector:@selector(xw_segment_pointer)]) {
+        _pointer = [_dataSource xw_segment_pointer];
+        [self.mainScrollBar addSubview:_pointer];
+        _pointer.frame = CGRectMake(0, Segment_Bar_Height - _pointer.height - _pointer.paddingBottom, _pointer.width, _pointer.height);
     }
 }
 
@@ -437,6 +439,7 @@ NSString *const kXWSegmentBarItemKey = @"com.segmentKit.XWSegmentBarItemKey";
         _flowLayout = [[XWSegmentBarFlowLayout alloc] init];
         _flowLayout.segmentBar = self;
         _flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        _flowLayout.itemSize = CGSizeMake(0, Segment_Bar_Height);
         
         if([_dataSource respondsToSelector:@selector(xw_segment_itemMinimumSpace)]){
             _flowLayout.minimumInteritemSpacing = [_dataSource xw_segment_itemMinimumSpace];
@@ -450,7 +453,7 @@ NSString *const kXWSegmentBarItemKey = @"com.segmentKit.XWSegmentBarItemKey";
             _flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
         }
         
-        _mainScrollBar = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:_flowLayout];
+        _mainScrollBar = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:_flowLayout];
         _mainScrollBar.delegate = self;
         _mainScrollBar.dataSource = self;
         
