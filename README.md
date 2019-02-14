@@ -19,9 +19,9 @@
 
 ## 演示
 
-<img src='./Resource/demo1.gif' width=31%>
-<img src='./Resource/demo2.gif' width=31%>
-<img src='./Resource/demo3.gif' width=31%>
+<img src='./Resource/demo1.gif' width=27%>
+<img src='./Resource/demo2.gif' width=27%>
+<img src='./Resource/demo3.gif' width=27%>
 
 ## 安装
 
@@ -76,7 +76,7 @@
 
 - (XWSegmentContext *)xw_segment_itemContextAtIndex:(NSInteger)idx {
 	
-	// 设置对应idx的item上下文，item将根据该上下进行布局和加载
+    // 设置对应idx的item上下文，item将根据该上下进行布局和加载
     XWSegmentContext *context = [[XWSegmentContext alloc] init];
    
     context.title = self.titleArr[idx];
@@ -109,8 +109,8 @@ tip: 你可以通过下载Example工程查看更多用法和设置。例如你�
 
 ```objc
 - (UIEdgeInsets)xw_segment_padding {
-	// 设置左右内边距为5
-	return UIEdgeInsetsMake(0, 5, 0, 5);
+    // 设置左右内边距为5
+    return UIEdgeInsetsMake(0, 5, 0, 5);
 }
 ```
 ## 作者
