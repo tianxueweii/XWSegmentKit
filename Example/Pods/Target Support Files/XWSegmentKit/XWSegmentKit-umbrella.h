@@ -10,14 +10,16 @@
 #endif
 #endif
 
-#import "XWSegmentContext.h"
+#import "XWSegmentBarFlowLayout.h"
+#import "XWSegmentConfigHelper.h"
+#import "UIColor+XWSegmentExtension.h"
 #import "UIView+XWSegmentExtension.h"
 #import "XWSegmentItem.h"
 #import "XWSegmentPointer.h"
 #import "XWSegmentPointerCustom.h"
 #import "XWSegmentPointerLine.h"
 #import "XWSegmentBar.h"
-#import "XWSegmentBarFlowLayout.h"
+#import "XWSegmentContext.h"
 #import "XWSegmentKit.h"
 
 FOUNDATION_EXPORT double XWSegmentKitVersionNumber;

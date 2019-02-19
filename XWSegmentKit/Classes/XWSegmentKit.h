@@ -15,5 +15,4 @@
 #import "XWSegmentPointerLine.h"
 #import "XWSegmentPointerCustom.h"
 
-
 #endif /* XWSegmentKit_h */

@@ -105,8 +105,7 @@ NSString *const kXWSegmentBarItemKey = @"com.segmentKit.XWSegmentBarItemKey";
     if (index != _currentIndex) {
         XWSegmentContext *lstctx = self.contexts[_currentIndex];
         
-        [lstctx setValue:@(NO) forKey:@"isSelected"];
-        [lstctx setValue:@(0) forKey:@"currentTransformScale"];
+        lstctx.isSelected = NO;
         
         [UIView performWithoutAnimation:^{
             [self.mainScrollBar reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:self.currentIndex inSection:0]]];
@@ -116,8 +115,7 @@ NSString *const kXWSegmentBarItemKey = @"com.segmentKit.XWSegmentBarItemKey";
     [self setCurrentIndex:index];
     
     XWSegmentContext *ctx = self.contexts[_currentIndex];
-    [ctx setValue:@(YES) forKey:@"isSelected"];
-    [ctx setValue:@(1) forKey:@"currentTransformScale"];
+    ctx.isSelected = YES;
     [UIView performWithoutAnimation:^{
         [self.mainScrollBar reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:self.currentIndex inSection:0]]];
     }];
@@ -222,7 +220,7 @@ NSString *const kXWSegmentBarItemKey = @"com.segmentKit.XWSegmentBarItemKey";
 
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
     XWSegmentContext *context = _contexts[indexPath.item];
-    [context setValue:@(NO) forKey:@"isSelected"];
+    context.isSelected = NO;
 }
 
 #pragma mark - Private Func
@@ -289,50 +287,12 @@ NSString *const kXWSegmentBarItemKey = @"com.segmentKit.XWSegmentBarItemKey";
     context = _contexts[leftIndex];
     pointContext = _contexts[rightIndex];
     
-    // 形变
-    CGAffineTransform leftTransform = CGAffineTransformMakeScale(context.fontTransformScale + leftScale * (1 - context.fontTransformScale),
-                                                                 context.fontTransformScale + leftScale * (1 - context.fontTransformScale));
-    CGAffineTransform rightTransform = CGAffineTransformMakeScale(pointContext.fontTransformScale + rightScale * (1- pointContext.fontTransformScale),
-                                                                  pointContext.fontTransformScale + rightScale * (1- pointContext.fontTransformScale));
-    
-    // 记录当前形变
-    [context setValue:[NSValue valueWithCGAffineTransform:leftTransform] forKey:@"currentTransform"];
-    [context setValue:@(leftScale) forKey:@"currentTransformScale"];
-    [pointContext setValue:[NSValue valueWithCGAffineTransform:rightTransform] forKey:@"currentTransform"];
-    [pointContext setValue:@(rightScale) forKey:@"currentTransformScale"];
-    
-    // 色差
-    CGFloat leftRedDif       = context.selectR - context.R;
-    CGFloat leftGreenDif     = context.selectG - context.G;
-    CGFloat leftBlueDif      = context.selectB - context.B;
-    CGFloat leftAlphaDif     = context.selectAlpha - context.alpha;
-
-    CGFloat rightRedDif      = pointContext.selectR - pointContext.R;
-    CGFloat rightGreenDif    = pointContext.selectG - pointContext.G;
-    CGFloat rightBlueDif     = pointContext.selectB - pointContext.B;
-    CGFloat rightAlphaDif    = pointContext.selectAlpha - pointContext.alpha;
-    
-    
-    UIColor *leftColor = [UIColor colorWithRed:leftScale * leftRedDif + context.R
-                                         green:leftScale * leftGreenDif + context.G
-                                          blue:leftScale * leftBlueDif + context.B
-                                         alpha:leftScale * leftAlphaDif + context.alpha];
-    
-    
-    UIColor *rightColor = [UIColor colorWithRed:rightScale * rightRedDif + pointContext.R
-                                          green:rightScale * rightGreenDif + pointContext.G
-                                           blue:rightScale * rightBlueDif + pointContext.B
-                                          alpha:rightScale * rightAlphaDif + pointContext.alpha];
-    
-    // 记录当前颜色
-    [context setValue:leftColor forKey:@"currentColor"];
-    [pointContext setValue:rightColor forKey:@"currentColor"];
-
+    context.progress = leftScale;
+    pointContext.progress = rightScale;
     
     // 调整Cell
     if (oldLeftIndex == rightIndex) {
-        [_contexts[oldRightIndex] setValue:@(NO) forKey:@"isSelected"];
-        [_contexts[oldRightIndex] setValue:@(0) forKey:@"currentTransformScale"];
+        _contexts[oldRightIndex].isSelected = NO;
         
         [UIView performWithoutAnimation:^{
             [self.mainScrollBar reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:oldRightIndex inSection:0]]];
@@ -340,8 +300,7 @@ NSString *const kXWSegmentBarItemKey = @"com.segmentKit.XWSegmentBarItemKey";
     }
     
     if (oldRightIndex == leftIndex) {
-        [_contexts[oldLeftIndex] setValue:@(NO) forKey:@"isSelected"];
-        [_contexts[oldLeftIndex] setValue:@(0) forKey:@"currentTransformScale"];
+        _contexts[oldLeftIndex].isSelected = NO;
         
         [UIView performWithoutAnimation:^{
             [self.mainScrollBar reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:oldLeftIndex inSection:0]]];

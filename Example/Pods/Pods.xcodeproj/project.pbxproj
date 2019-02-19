@@ -7,32 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2482F5C3A1EF5FB1D9A456FE375DDA02 /* UIView+XWSegmentExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = C54D95756B550F90CDD746A9903D7486 /* UIView+XWSegmentExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A7E2447E8B6748E39ECBBA4AA1BB225 /* XWSegmentPointerCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = C03DDB0D1B520EAA6B3683512BB0AB18 /* XWSegmentPointerCustom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17020071B490C7AD0BDBF26592FD0038 /* XWSegmentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A62D952A6A8E9450066C643B39B6DBB /* XWSegmentItem.m */; };
+		23CE5E626A78A34C233CD2729BD527EF /* XWSegmentPointerCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF821722C5B9A286152DCFBD35C376C /* XWSegmentPointerCustom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		283FB57EA6E8C7E034A077F4EF7F511B /* XWSegmentConfigHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8685E8E484C1C51928328E57B419C81B /* XWSegmentConfigHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3783BDACA9642E5ACBECF10E16450BF7 /* XWSegmentBarFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC0A6F853D8EF191FEBE4D25832EFF2 /* XWSegmentBarFlowLayout.m */; };
 		3AFAEB1AF218E5B2E3E3E8C44E09902F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		4E718F38EDFFC48E6F47E10D7E7FB72A /* XWSegmentBarFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 32ECA1846B8F3CA2FC3A117D516E87BA /* XWSegmentBarFlowLayout.m */; };
+		450B223B0B55B3568F9210EA3211A261 /* XWSegmentKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E87149EA28F262A05B2C135B17EE17 /* XWSegmentKit-dummy.m */; };
 		50401C5CA6407765AB7F1462AD18F3DE /* Pods-XWSegmentKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A95263E025224404478B851CB046E08 /* Pods-XWSegmentKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		588C7308401AAEF06C09D8815C49EBE5 /* XWSegmentBarFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 87E9630A70A4E51904B20079CF63FC05 /* XWSegmentBarFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BC629FDB0F80A2295E940ECB3639F0C /* XWSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BCB8A594A63E2EBF72C6EC5F1BDA57 /* XWSegmentBar.m */; };
-		70012599E7AFF3AFA1A4AB4B55763166 /* XWSegmentContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 512A4FCDEC4B0559601287CF73C1D15E /* XWSegmentContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C5D9E0FC6DB0C81BEAFD5F55D4DA452 /* UIView+XWSegmentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FC4C8176D4ADB1EC436D60B3CAEAF7 /* UIView+XWSegmentExtension.m */; };
-		805462224FBBFCC46A17E2D8882EFF49 /* XWSegmentBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C6E28814E1D1760E14D51AA6A4DE1D /* XWSegmentBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8860755F9D55EEFA68BF2647ADBF724E /* XWSegmentContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E781260962B1FD6E8E4E8B00B7665077 /* XWSegmentContext.m */; };
+		52CD2C62CA555AD26ABF524C9D35F896 /* XWSegmentItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D90C4034526CBAB65216858757022AC0 /* XWSegmentItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		572114BFF11C2CAA2E7F97F43B7D3037 /* UIColor+XWSegmentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA8CCBA5BE1876E062F8BF0CE0AB371 /* UIColor+XWSegmentExtension.m */; };
+		5CDCA0C26D9DDB7AAAB7D7D7E08B8595 /* XWSegmentPointerLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 003795E3590F46A9BA13F5C35FB1CF77 /* XWSegmentPointerLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6046045F296104F754C51C5AB14468C2 /* XWSegmentConfigHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C19E23B3ECA49AB162916614C3C361 /* XWSegmentConfigHelper.m */; };
+		74C97736AE50751AC1C25203E559B0EF /* XWSegmentKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C18C88CA29A7BCCB2F6F2DFE68C98F3B /* XWSegmentKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		916280C0D6E79095D33996D8D87F17AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		94749FE8A04A698F6A1E1A05929D18D1 /* Pods-XWSegmentKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB7536435E9AFDDA85FA2EC116492959 /* Pods-XWSegmentKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		955C9E7FE3C8337549CA6621FE02560F /* XWSegmentItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B2AB63700D200BA79E1D3FAF6A6EEC /* XWSegmentItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9ECC6E6ABA7074825F5A7A7225EBB5A9 /* XWSegmentPointerCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 073E0AA25BAFC74CD77FCA4C331725D9 /* XWSegmentPointerCustom.m */; };
+		9DE5E7AA90CFB2FC42DAEC0BF7167E84 /* XWSegmentBar.h in Headers */ = {isa = PBXBuildFile; fileRef = D69882F5BE7ED664AB89A4058B0072B7 /* XWSegmentBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3846B74B60038529138126990673296 /* XWSegmentContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5628D3E8E04EE8EC3FFA1BD10927A5DA /* XWSegmentContext.m */; };
 		A60E5DD13089FD7C4CBEC49E86AFA80B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		AB549D487583B9DB7719C4DA187E09E6 /* XWSegmentPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D96500E8CB4BCDF96A2FD99EFF896E9 /* XWSegmentPointer.m */; };
+		A8A377B3D73CFF876CF14AC380BE73BD /* XWSegmentContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E67836D12299A845DE768BB4524A608 /* XWSegmentContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B05A9B54F4282A44114FBCBA65C6E7A1 /* Pods-XWSegmentKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7C61BB78CD690B46F180081556D578 /* Pods-XWSegmentKit_Tests-dummy.m */; };
-		B09C03DB609D3A9DDC7055975E6D3ABA /* XWSegmentPointerLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 319B774E8AD99F276EC08D79BC4DBD78 /* XWSegmentPointerLine.m */; };
-		B69BE023CB4973681A5DCD56DC3AC534 /* XWSegmentPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = E2D6BC93E95694482F98E0CFCB3EC018 /* XWSegmentPointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA1AA69D14633AA295A1466AFA48D8B7 /* XWSegmentPointerLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 40F172C3826A0F1C7A31CB06046B96E6 /* XWSegmentPointerLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDE052EBF15BE12455BF7D681F905ED9 /* XWSegmentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4037708ADDE49E8B81D5D54B362290FC /* XWSegmentItem.m */; };
-		BEB148F3AB210B0A45497CE3F472502C /* XWSegmentKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D960A3C50A2ED09C70F94E337CE3077 /* XWSegmentKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1A2CC7E64221461672F68A440730943 /* XWSegmentKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49AD3A000D033D666D057E7BA326297A /* XWSegmentKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8CD2BDFD22594801EC3AB6F2DC481DB /* XWSegmentKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA36B4C32C30D50C0798C9CA05A5A2C /* XWSegmentKit-dummy.m */; };
+		B583FB0AD35B1C417E2EC8D04D1CB57F /* UIView+XWSegmentExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = D03599C0ADE3E88F1F5D80717E904944 /* UIView+XWSegmentExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B92BEC84C5823C0C87EF432366015F92 /* XWSegmentPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B63E572619CD91BC992536C2BA38316 /* XWSegmentPointer.m */; };
+		B9CBC1744D1540AD71A24F9B55D91600 /* UIView+XWSegmentExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F83D4D9AF7B3F72F0D588877931BB817 /* UIView+XWSegmentExtension.m */; };
+		C323212306636331B575C0BF7C7E189C /* XWSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3F4965F49827250000A63D651D9103 /* XWSegmentBar.m */; };
+		C7D1A0DC409463548585B29FEFEEC92D /* XWSegmentPointerCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 4347F34BAA78AEF813186E24757D0AE0 /* XWSegmentPointerCustom.m */; };
+		E2D207D36C06D6AAF8E243144B34EE4B /* XWSegmentKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0273FDC824B4EA99FB00D1815EFA0B36 /* XWSegmentKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1C7378FAC8BF8E6BD538474D1481F34 /* Pods-XWSegmentKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A1DD4D014F7F74666F9E727F1EF63A /* Pods-XWSegmentKit_Example-dummy.m */; };
+		F1CAF728C54D177FA663366B6D04C910 /* XWSegmentPointerLine.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DF1B813E483F4AC8913E95F7C32EC1 /* XWSegmentPointerLine.m */; };
+		F4BFDD04A87913BFD917F139F0AE9EA0 /* XWSegmentBarFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ABB98A3A8E88D6B63C4DEB2B702EC40 /* XWSegmentBarFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F915C42ED7EFFF92479E47C45E88A480 /* UIColor+XWSegmentExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3214D4F033191F312ECAB5F62B28A040 /* UIColor+XWSegmentExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF8A398C6D745D0B8D228B137ED1AAC1 /* XWSegmentPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A73CD47A3281D8C8B6BC0C65E6B2669 /* XWSegmentPointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,56 +57,60 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		003795E3590F46A9BA13F5C35FB1CF77 /* XWSegmentPointerLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XWSegmentPointerLine.h; sourceTree = "<group>"; };
+		0121D87B11A68BD1196F90DEC7F477A1 /* XWSegmentKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XWSegmentKit.xcconfig; sourceTree = "<group>"; };
+		0273FDC824B4EA99FB00D1815EFA0B36 /* XWSegmentKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XWSegmentKit-umbrella.h"; sourceTree = "<group>"; };
 		027B9E6720677CD2E3D164EEE0AFAAB1 /* Pods-XWSegmentKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XWSegmentKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		073E0AA25BAFC74CD77FCA4C331725D9 /* XWSegmentPointerCustom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XWSegmentPointerCustom.m; sourceTree = "<group>"; };
 		0994EE0ABB160DB4BFC94858025A6FE9 /* Pods-XWSegmentKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XWSegmentKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		09B55447F6CBD55B2DF89ABA616B1582 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B9B6CE4C49FF3299E0B7F1BB7DE2BA6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0A73CD47A3281D8C8B6BC0C65E6B2669 /* XWSegmentPointer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XWSegmentPointer.h; sourceTree = "<group>"; };
+		0B722A547E7CA9A8D996D385ECC4A3F0 /* XWSegmentKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XWSegmentKit.modulemap; sourceTree = "<group>"; };
+		1ABB98A3A8E88D6B63C4DEB2B702EC40 /* XWSegmentBarFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XWSegmentBarFlowLayout.h; sourceTree = "<group>"; };
+		1CC0A6F853D8EF191FEBE4D25832EFF2 /* XWSegmentBarFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XWSegmentBarFlowLayout.m; sourceTree = "<group>"; };
+		1E3F4965F49827250000A63D651D9103 /* XWSegmentBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XWSegmentBar.m; path = XWSegmentKit/Classes/XWSegmentBar.m; sourceTree = "<group>"; };
+		2B63E572619CD91BC992536C2BA38316 /* XWSegmentPointer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XWSegmentPointer.m; sourceTree = "<group>"; };
 		2DBC90F816623ADD773C8D4C36EB16C4 /* Pods-XWSegmentKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XWSegmentKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		2FB6D8FE10BD492C9AA1F11214F4D469 /* Pods-XWSegmentKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XWSegmentKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		319B774E8AD99F276EC08D79BC4DBD78 /* XWSegmentPointerLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XWSegmentPointerLine.m; sourceTree = "<group>"; };
-		32ECA1846B8F3CA2FC3A117D516E87BA /* XWSegmentBarFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XWSegmentBarFlowLayout.m; path = XWSegmentKit/Classes/XWSegmentBarFlowLayout.m; sourceTree = "<group>"; };
+		3214D4F033191F312ECAB5F62B28A040 /* UIColor+XWSegmentExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+XWSegmentExtension.h"; sourceTree = "<group>"; };
+		33C19E23B3ECA49AB162916614C3C361 /* XWSegmentConfigHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XWSegmentConfigHelper.m; sourceTree = "<group>"; };
 		370AEFCB7A414D800D13DA1083A23526 /* Pods_XWSegmentKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XWSegmentKit_Tests.framework; path = "Pods-XWSegmentKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3C974BD003D9D2CC520077DBB1D710 /* Pods-XWSegmentKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XWSegmentKit_Tests-resources.sh"; sourceTree = "<group>"; };
-		4037708ADDE49E8B81D5D54B362290FC /* XWSegmentItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XWSegmentItem.m; sourceTree = "<group>"; };
-		4053432D138D95083FF2855E4CEFF9A3 /* XWSegmentKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XWSegmentKit-prefix.pch"; sourceTree = "<group>"; };
-		40F172C3826A0F1C7A31CB06046B96E6 /* XWSegmentPointerLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XWSegmentPointerLine.h; sourceTree = "<group>"; };
 		43061A2FDB592A51BCBC4AFBA35300DD /* Pods-XWSegmentKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XWSegmentKit_Example.modulemap"; sourceTree = "<group>"; };
-		49AD3A000D033D666D057E7BA326297A /* XWSegmentKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XWSegmentKit-umbrella.h"; sourceTree = "<group>"; };
-		4D960A3C50A2ED09C70F94E337CE3077 /* XWSegmentKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XWSegmentKit.h; path = XWSegmentKit/Classes/XWSegmentKit.h; sourceTree = "<group>"; };
-		512A4FCDEC4B0559601287CF73C1D15E /* XWSegmentContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XWSegmentContext.h; sourceTree = "<group>"; };
+		4347F34BAA78AEF813186E24757D0AE0 /* XWSegmentPointerCustom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XWSegmentPointerCustom.m; sourceTree = "<group>"; };
+		4A62D952A6A8E9450066C643B39B6DBB /* XWSegmentItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XWSegmentItem.m; sourceTree = "<group>"; };
+		4CA8CCBA5BE1876E062F8BF0CE0AB371 /* UIColor+XWSegmentExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XWSegmentExtension.m"; sourceTree = "<group>"; };
+		5628D3E8E04EE8EC3FFA1BD10927A5DA /* XWSegmentContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XWSegmentContext.m; path = XWSegmentKit/Classes/XWSegmentContext.m; sourceTree = "<group>"; };
+		58C6BD3CBA6DD1793262C43283E0F71A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5C4A5655B50272B410EE5247CEFB604F /* Pods-XWSegmentKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XWSegmentKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		68A1653973F2E080B6463005D2B42930 /* Pods-XWSegmentKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XWSegmentKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		74BCB8A594A63E2EBF72C6EC5F1BDA57 /* XWSegmentBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XWSegmentBar.m; path = XWSegmentKit/Classes/XWSegmentBar.m; sourceTree = "<group>"; };
+		6CF821722C5B9A286152DCFBD35C376C /* XWSegmentPointerCustom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XWSegmentPointerCustom.h; sourceTree = "<group>"; };
 		764747D34D08B6A386B37B1511167F34 /* Pods-XWSegmentKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XWSegmentKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7A57BF65C81EBFA8568C2064A544B535 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D96500E8CB4BCDF96A2FD99EFF896E9 /* XWSegmentPointer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XWSegmentPointer.m; sourceTree = "<group>"; };
-		84C6E28814E1D1760E14D51AA6A4DE1D /* XWSegmentBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XWSegmentBar.h; path = XWSegmentKit/Classes/XWSegmentBar.h; sourceTree = "<group>"; };
-		87E9630A70A4E51904B20079CF63FC05 /* XWSegmentBarFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XWSegmentBarFlowLayout.h; path = XWSegmentKit/Classes/XWSegmentBarFlowLayout.h; sourceTree = "<group>"; };
+		8685E8E484C1C51928328E57B419C81B /* XWSegmentConfigHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XWSegmentConfigHelper.h; sourceTree = "<group>"; };
 		88A1DD4D014F7F74666F9E727F1EF63A /* Pods-XWSegmentKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XWSegmentKit_Example-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A95263E025224404478B851CB046E08 /* Pods-XWSegmentKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XWSegmentKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		A8FC4C8176D4ADB1EC436D60B3CAEAF7 /* UIView+XWSegmentExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+XWSegmentExtension.m"; sourceTree = "<group>"; };
+		9E67836D12299A845DE768BB4524A608 /* XWSegmentContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XWSegmentContext.h; path = XWSegmentKit/Classes/XWSegmentContext.h; sourceTree = "<group>"; };
+		B5DF1B813E483F4AC8913E95F7C32EC1 /* XWSegmentPointerLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XWSegmentPointerLine.m; sourceTree = "<group>"; };
+		BAFAAFFA751F7FDCE8493BEF350F0A34 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		BB7536435E9AFDDA85FA2EC116492959 /* Pods-XWSegmentKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XWSegmentKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		BDB02EB504F83423DDA767B526CB782F /* Pods-XWSegmentKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XWSegmentKit_Example-resources.sh"; sourceTree = "<group>"; };
-		C03DDB0D1B520EAA6B3683512BB0AB18 /* XWSegmentPointerCustom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XWSegmentPointerCustom.h; sourceTree = "<group>"; };
-		C54D95756B550F90CDD746A9903D7486 /* UIView+XWSegmentExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+XWSegmentExtension.h"; sourceTree = "<group>"; };
-		CCF846BEBD7EE8A0A0EE6B2EFB720AF0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0782B409EFA2EC917BF82DA80B6853B /* XWSegmentKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XWSegmentKit.xcconfig; sourceTree = "<group>"; };
+		C18C88CA29A7BCCB2F6F2DFE68C98F3B /* XWSegmentKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XWSegmentKit.h; path = XWSegmentKit/Classes/XWSegmentKit.h; sourceTree = "<group>"; };
+		D03599C0ADE3E88F1F5D80717E904944 /* UIView+XWSegmentExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+XWSegmentExtension.h"; sourceTree = "<group>"; };
 		D2CE5CAF45026AD272CC02200BD0FC4F /* Pods-XWSegmentKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XWSegmentKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D36D1CCDB926AD574D77D3A114263D8F /* Pods-XWSegmentKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XWSegmentKit_Tests.modulemap"; sourceTree = "<group>"; };
+		D36D569E0917B3F72B7EAE3DFC898219 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		D41A9132D832C7A727B74D745D8912C9 /* XWSegmentKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XWSegmentKit.framework; path = XWSegmentKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D580997FBDDADC8F5BABFBA73058ECB4 /* XWSegmentKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XWSegmentKit.modulemap; sourceTree = "<group>"; };
+		D69882F5BE7ED664AB89A4058B0072B7 /* XWSegmentBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XWSegmentBar.h; path = XWSegmentKit/Classes/XWSegmentBar.h; sourceTree = "<group>"; };
+		D90C4034526CBAB65216858757022AC0 /* XWSegmentItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XWSegmentItem.h; sourceTree = "<group>"; };
 		DACFDDB3804631092F4B282C41254169 /* Pods_XWSegmentKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XWSegmentKit_Example.framework; path = "Pods-XWSegmentKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB0F9058C91BE5CA757249F34BA14804 /* Pods-XWSegmentKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XWSegmentKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E2D6BC93E95694482F98E0CFCB3EC018 /* XWSegmentPointer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XWSegmentPointer.h; sourceTree = "<group>"; };
-		E781260962B1FD6E8E4E8B00B7665077 /* XWSegmentContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XWSegmentContext.m; sourceTree = "<group>"; };
-		E8018D7B59CD1B708909A92306375D5C /* XWSegmentKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = XWSegmentKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		E9B2AB63700D200BA79E1D3FAF6A6EEC /* XWSegmentItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XWSegmentItem.h; sourceTree = "<group>"; };
+		E67AB13750214F705049A39B46EF0006 /* XWSegmentKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = XWSegmentKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E8DB6199D6ED5207F788DB1F90840A0C /* XWSegmentKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XWSegmentKit-prefix.pch"; sourceTree = "<group>"; };
 		F35E156E6E84B394A8B89F1054330FE5 /* Pods-XWSegmentKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XWSegmentKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FC2CA71698D0197617E7F6682A53EF02 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		FCA36B4C32C30D50C0798C9CA05A5A2C /* XWSegmentKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XWSegmentKit-dummy.m"; sourceTree = "<group>"; };
+		F83D4D9AF7B3F72F0D588877931BB817 /* UIView+XWSegmentExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+XWSegmentExtension.m"; sourceTree = "<group>"; };
+		F9E87149EA28F262A05B2C135B17EE17 /* XWSegmentKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XWSegmentKit-dummy.m"; sourceTree = "<group>"; };
 		FD7C61BB78CD690B46F180081556D578 /* Pods-XWSegmentKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XWSegmentKit_Tests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,47 +142,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17680A04291C96F7EF420FCA051D9DA1 /* Support Files */ = {
+		10BE8159315C3E30D91A9F3DD9F4EE22 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CCF846BEBD7EE8A0A0EE6B2EFB720AF0 /* Info.plist */,
-				D580997FBDDADC8F5BABFBA73058ECB4 /* XWSegmentKit.modulemap */,
-				D0782B409EFA2EC917BF82DA80B6853B /* XWSegmentKit.xcconfig */,
-				FCA36B4C32C30D50C0798C9CA05A5A2C /* XWSegmentKit-dummy.m */,
-				4053432D138D95083FF2855E4CEFF9A3 /* XWSegmentKit-prefix.pch */,
-				49AD3A000D033D666D057E7BA326297A /* XWSegmentKit-umbrella.h */,
+				58C6BD3CBA6DD1793262C43283E0F71A /* Info.plist */,
+				0B722A547E7CA9A8D996D385ECC4A3F0 /* XWSegmentKit.modulemap */,
+				0121D87B11A68BD1196F90DEC7F477A1 /* XWSegmentKit.xcconfig */,
+				F9E87149EA28F262A05B2C135B17EE17 /* XWSegmentKit-dummy.m */,
+				E8DB6199D6ED5207F788DB1F90840A0C /* XWSegmentKit-prefix.pch */,
+				0273FDC824B4EA99FB00D1815EFA0B36 /* XWSegmentKit-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/XWSegmentKit";
-			sourceTree = "<group>";
-		};
-		1AE20A0765FD1DDDFBD6B28D6A12722D /* XWSegmentKit */ = {
-			isa = PBXGroup;
-			children = (
-				84C6E28814E1D1760E14D51AA6A4DE1D /* XWSegmentBar.h */,
-				74BCB8A594A63E2EBF72C6EC5F1BDA57 /* XWSegmentBar.m */,
-				87E9630A70A4E51904B20079CF63FC05 /* XWSegmentBarFlowLayout.h */,
-				32ECA1846B8F3CA2FC3A117D516E87BA /* XWSegmentBarFlowLayout.m */,
-				4D960A3C50A2ED09C70F94E337CE3077 /* XWSegmentKit.h */,
-				2739F981D09DFF637B60A14A8020AED6 /* Context */,
-				AE093E6F4AC6DC5987D647D34A096708 /* Extension */,
-				DA568CFAD84D04F68A6839E78F52F2C5 /* Item */,
-				3F28B335311E696DFCCDF73512E5E78D /* Pod */,
-				4FDA27E36E60AA09203EA0E4C1EA7FD9 /* Pointer */,
-				17680A04291C96F7EF420FCA051D9DA1 /* Support Files */,
-			);
-			name = XWSegmentKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		2739F981D09DFF637B60A14A8020AED6 /* Context */ = {
-			isa = PBXGroup;
-			children = (
-				512A4FCDEC4B0559601287CF73C1D15E /* XWSegmentContext.h */,
-				E781260962B1FD6E8E4E8B00B7665077 /* XWSegmentContext.m */,
-			);
-			name = Context;
-			path = XWSegmentKit/Classes/Context;
 			sourceTree = "<group>";
 		};
 		2DFF13C05F8050BE05677078AA19D8C4 /* Products */ = {
@@ -190,30 +169,20 @@
 		324FB5208340DC8062D645C9A09A6325 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1AE20A0765FD1DDDFBD6B28D6A12722D /* XWSegmentKit */,
+				DA12FAAA20F4F57A65C7543FE30D640D /* XWSegmentKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		3F28B335311E696DFCCDF73512E5E78D /* Pod */ = {
+		5DB812072D65509061F0A8504AC2F2F4 /* Pointer */ = {
 			isa = PBXGroup;
 			children = (
-				FC2CA71698D0197617E7F6682A53EF02 /* LICENSE */,
-				1B9B6CE4C49FF3299E0B7F1BB7DE2BA6 /* README.md */,
-				E8018D7B59CD1B708909A92306375D5C /* XWSegmentKit.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		4FDA27E36E60AA09203EA0E4C1EA7FD9 /* Pointer */ = {
-			isa = PBXGroup;
-			children = (
-				E2D6BC93E95694482F98E0CFCB3EC018 /* XWSegmentPointer.h */,
-				7D96500E8CB4BCDF96A2FD99EFF896E9 /* XWSegmentPointer.m */,
-				C03DDB0D1B520EAA6B3683512BB0AB18 /* XWSegmentPointerCustom.h */,
-				073E0AA25BAFC74CD77FCA4C331725D9 /* XWSegmentPointerCustom.m */,
-				40F172C3826A0F1C7A31CB06046B96E6 /* XWSegmentPointerLine.h */,
-				319B774E8AD99F276EC08D79BC4DBD78 /* XWSegmentPointerLine.m */,
+				0A73CD47A3281D8C8B6BC0C65E6B2669 /* XWSegmentPointer.h */,
+				2B63E572619CD91BC992536C2BA38316 /* XWSegmentPointer.m */,
+				6CF821722C5B9A286152DCFBD35C376C /* XWSegmentPointerCustom.h */,
+				4347F34BAA78AEF813186E24757D0AE0 /* XWSegmentPointerCustom.m */,
+				003795E3590F46A9BA13F5C35FB1CF77 /* XWSegmentPointerLine.h */,
+				B5DF1B813E483F4AC8913E95F7C32EC1 /* XWSegmentPointerLine.m */,
 			);
 			name = Pointer;
 			path = XWSegmentKit/Classes/Pointer;
@@ -236,6 +205,16 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		718B8666192B3B14783CB4646C722CAE /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				D90C4034526CBAB65216858757022AC0 /* XWSegmentItem.h */,
+				4A62D952A6A8E9450066C643B39B6DBB /* XWSegmentItem.m */,
+			);
+			name = Item;
+			path = XWSegmentKit/Classes/Item;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -247,11 +226,35 @@
 			);
 			sourceTree = "<group>";
 		};
-		AE093E6F4AC6DC5987D647D34A096708 /* Extension */ = {
+		861F919D547159FC518C75E8E000D0E1 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				C54D95756B550F90CDD746A9903D7486 /* UIView+XWSegmentExtension.h */,
-				A8FC4C8176D4ADB1EC436D60B3CAEAF7 /* UIView+XWSegmentExtension.m */,
+				BAFAAFFA751F7FDCE8493BEF350F0A34 /* LICENSE */,
+				D36D569E0917B3F72B7EAE3DFC898219 /* README.md */,
+				E67AB13750214F705049A39B46EF0006 /* XWSegmentKit.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		92384A50392519A075A63B06840F5A08 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				1ABB98A3A8E88D6B63C4DEB2B702EC40 /* XWSegmentBarFlowLayout.h */,
+				1CC0A6F853D8EF191FEBE4D25832EFF2 /* XWSegmentBarFlowLayout.m */,
+				8685E8E484C1C51928328E57B419C81B /* XWSegmentConfigHelper.h */,
+				33C19E23B3ECA49AB162916614C3C361 /* XWSegmentConfigHelper.m */,
+			);
+			name = Config;
+			path = XWSegmentKit/Classes/Config;
+			sourceTree = "<group>";
+		};
+		ADD18DA55B76C179B5DBCADCADC30884 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3214D4F033191F312ECAB5F62B28A040 /* UIColor+XWSegmentExtension.h */,
+				4CA8CCBA5BE1876E062F8BF0CE0AB371 /* UIColor+XWSegmentExtension.m */,
+				D03599C0ADE3E88F1F5D80717E904944 /* UIView+XWSegmentExtension.h */,
+				F83D4D9AF7B3F72F0D588877931BB817 /* UIView+XWSegmentExtension.m */,
 			);
 			name = Extension;
 			path = XWSegmentKit/Classes/Extension;
@@ -283,14 +286,23 @@
 			path = "Target Support Files/Pods-XWSegmentKit_Example";
 			sourceTree = "<group>";
 		};
-		DA568CFAD84D04F68A6839E78F52F2C5 /* Item */ = {
+		DA12FAAA20F4F57A65C7543FE30D640D /* XWSegmentKit */ = {
 			isa = PBXGroup;
 			children = (
-				E9B2AB63700D200BA79E1D3FAF6A6EEC /* XWSegmentItem.h */,
-				4037708ADDE49E8B81D5D54B362290FC /* XWSegmentItem.m */,
+				D69882F5BE7ED664AB89A4058B0072B7 /* XWSegmentBar.h */,
+				1E3F4965F49827250000A63D651D9103 /* XWSegmentBar.m */,
+				9E67836D12299A845DE768BB4524A608 /* XWSegmentContext.h */,
+				5628D3E8E04EE8EC3FFA1BD10927A5DA /* XWSegmentContext.m */,
+				C18C88CA29A7BCCB2F6F2DFE68C98F3B /* XWSegmentKit.h */,
+				92384A50392519A075A63B06840F5A08 /* Config */,
+				ADD18DA55B76C179B5DBCADCADC30884 /* Extension */,
+				718B8666192B3B14783CB4646C722CAE /* Item */,
+				861F919D547159FC518C75E8E000D0E1 /* Pod */,
+				5DB812072D65509061F0A8504AC2F2F4 /* Pointer */,
+				10BE8159315C3E30D91A9F3DD9F4EE22 /* Support Files */,
 			);
-			name = Item;
-			path = XWSegmentKit/Classes/Item;
+			name = XWSegmentKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		FCFE6932AA11FA6E510B41D47318B5FE /* Pods-XWSegmentKit_Tests */ = {
@@ -322,20 +334,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72F6BB35A489B8CD67B5A92CC921D809 /* Headers */ = {
+		711806CA51510AB3B8CB74CF9F6C6D21 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2482F5C3A1EF5FB1D9A456FE375DDA02 /* UIView+XWSegmentExtension.h in Headers */,
-				805462224FBBFCC46A17E2D8882EFF49 /* XWSegmentBar.h in Headers */,
-				588C7308401AAEF06C09D8815C49EBE5 /* XWSegmentBarFlowLayout.h in Headers */,
-				70012599E7AFF3AFA1A4AB4B55763166 /* XWSegmentContext.h in Headers */,
-				955C9E7FE3C8337549CA6621FE02560F /* XWSegmentItem.h in Headers */,
-				C1A2CC7E64221461672F68A440730943 /* XWSegmentKit-umbrella.h in Headers */,
-				BEB148F3AB210B0A45497CE3F472502C /* XWSegmentKit.h in Headers */,
-				B69BE023CB4973681A5DCD56DC3AC534 /* XWSegmentPointer.h in Headers */,
-				3A7E2447E8B6748E39ECBBA4AA1BB225 /* XWSegmentPointerCustom.h in Headers */,
-				BA1AA69D14633AA295A1466AFA48D8B7 /* XWSegmentPointerLine.h in Headers */,
+				F915C42ED7EFFF92479E47C45E88A480 /* UIColor+XWSegmentExtension.h in Headers */,
+				B583FB0AD35B1C417E2EC8D04D1CB57F /* UIView+XWSegmentExtension.h in Headers */,
+				9DE5E7AA90CFB2FC42DAEC0BF7167E84 /* XWSegmentBar.h in Headers */,
+				F4BFDD04A87913BFD917F139F0AE9EA0 /* XWSegmentBarFlowLayout.h in Headers */,
+				283FB57EA6E8C7E034A077F4EF7F511B /* XWSegmentConfigHelper.h in Headers */,
+				A8A377B3D73CFF876CF14AC380BE73BD /* XWSegmentContext.h in Headers */,
+				52CD2C62CA555AD26ABF524C9D35F896 /* XWSegmentItem.h in Headers */,
+				E2D207D36C06D6AAF8E243144B34EE4B /* XWSegmentKit-umbrella.h in Headers */,
+				74C97736AE50751AC1C25203E559B0EF /* XWSegmentKit.h in Headers */,
+				FF8A398C6D745D0B8D228B137ED1AAC1 /* XWSegmentPointer.h in Headers */,
+				23CE5E626A78A34C233CD2729BD527EF /* XWSegmentPointerCustom.h in Headers */,
+				5CDCA0C26D9DDB7AAAB7D7D7E08B8595 /* XWSegmentPointerLine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,9 +368,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA1F6D8409F6B2478FE78E27D641E471 /* Build configuration list for PBXNativeTarget "XWSegmentKit" */;
 			buildPhases = (
-				4D89A1FA2C881E9B3A9FEC2C0BD442E6 /* Sources */,
+				5A27A8F95314F6682ADCF951F1FBED0C /* Sources */,
 				E3AABA89166229F58CA9B835DA230E19 /* Frameworks */,
-				72F6BB35A489B8CD67B5A92CC921D809 /* Headers */,
+				711806CA51510AB3B8CB74CF9F6C6D21 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -440,19 +454,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D89A1FA2C881E9B3A9FEC2C0BD442E6 /* Sources */ = {
+		5A27A8F95314F6682ADCF951F1FBED0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C5D9E0FC6DB0C81BEAFD5F55D4DA452 /* UIView+XWSegmentExtension.m in Sources */,
-				6BC629FDB0F80A2295E940ECB3639F0C /* XWSegmentBar.m in Sources */,
-				4E718F38EDFFC48E6F47E10D7E7FB72A /* XWSegmentBarFlowLayout.m in Sources */,
-				8860755F9D55EEFA68BF2647ADBF724E /* XWSegmentContext.m in Sources */,
-				BDE052EBF15BE12455BF7D681F905ED9 /* XWSegmentItem.m in Sources */,
-				C8CD2BDFD22594801EC3AB6F2DC481DB /* XWSegmentKit-dummy.m in Sources */,
-				AB549D487583B9DB7719C4DA187E09E6 /* XWSegmentPointer.m in Sources */,
-				9ECC6E6ABA7074825F5A7A7225EBB5A9 /* XWSegmentPointerCustom.m in Sources */,
-				B09C03DB609D3A9DDC7055975E6D3ABA /* XWSegmentPointerLine.m in Sources */,
+				572114BFF11C2CAA2E7F97F43B7D3037 /* UIColor+XWSegmentExtension.m in Sources */,
+				B9CBC1744D1540AD71A24F9B55D91600 /* UIView+XWSegmentExtension.m in Sources */,
+				C323212306636331B575C0BF7C7E189C /* XWSegmentBar.m in Sources */,
+				3783BDACA9642E5ACBECF10E16450BF7 /* XWSegmentBarFlowLayout.m in Sources */,
+				6046045F296104F754C51C5AB14468C2 /* XWSegmentConfigHelper.m in Sources */,
+				A3846B74B60038529138126990673296 /* XWSegmentContext.m in Sources */,
+				17020071B490C7AD0BDBF26592FD0038 /* XWSegmentItem.m in Sources */,
+				450B223B0B55B3568F9210EA3211A261 /* XWSegmentKit-dummy.m in Sources */,
+				B92BEC84C5823C0C87EF432366015F92 /* XWSegmentPointer.m in Sources */,
+				C7D1A0DC409463548585B29FEFEEC92D /* XWSegmentPointerCustom.m in Sources */,
+				F1CAF728C54D177FA663366B6D04C910 /* XWSegmentPointerLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,7 +597,7 @@
 		};
 		9948163440197FD51813F56C82A2BDE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0782B409EFA2EC917BF82DA80B6853B /* XWSegmentKit.xcconfig */;
+			baseConfigurationReference = 0121D87B11A68BD1196F90DEC7F477A1 /* XWSegmentKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -644,7 +660,7 @@
 		};
 		D48369F236DD8D046D05A9E78AF38703 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0782B409EFA2EC917BF82DA80B6853B /* XWSegmentKit.xcconfig */;
+			baseConfigurationReference = 0121D87B11A68BD1196F90DEC7F477A1 /* XWSegmentKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

@@ -63,7 +63,7 @@
     }
 
     CGRect nowFrame = attributes.frame;
-    CGFloat sizeWidth = context.width + (context.maxWidth - context.width) * context.currentTransformScale;
+    CGFloat sizeWidth = context.width + (context.maxWidth - context.width) * context.progress;
     nowFrame.origin.x = origin;
     nowFrame.origin.y = self.sectionInset.top;
     nowFrame.size.width = sizeWidth;
