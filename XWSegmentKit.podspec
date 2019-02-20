@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XWSegmentKit'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = '分段导航控制器'
 
   s.description      = <<-DESC

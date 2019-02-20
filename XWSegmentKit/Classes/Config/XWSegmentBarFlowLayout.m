@@ -25,7 +25,7 @@
     CGSize size = [super collectionViewContentSize];
     CGFloat newWidth = size.width;
     if (_layoutAttributes.lastObject) {
-        newWidth = _layoutAttributes.lastObject.frame.origin.x + self.layoutAttributes.lastObject.frame.size.width + self.sectionInset.right;
+        newWidth = _layoutAttributes.lastObject.frame.origin.x + self.layoutAttributes.lastObject.frame.size.width + self.padding.right;
     }
     return CGSizeMake(newWidth, size.height);
 }
@@ -57,7 +57,7 @@
     CGFloat origin;
     
     if (indexPath.item - 1 < 0) {
-        origin = self.sectionInset.left;
+        origin = self.padding.left;
     }else{
         origin = self.layoutAttributes[indexPath.item - 1].frame.origin.x + self.layoutAttributes[indexPath.item - 1].frame.size.width + minimumSpacing;
     }
@@ -65,9 +65,8 @@
     CGRect nowFrame = attributes.frame;
     CGFloat sizeWidth = context.width + (context.maxWidth - context.width) * context.progress;
     nowFrame.origin.x = origin;
-    nowFrame.origin.y = self.sectionInset.top;
+    nowFrame.origin.y = self.padding.top;
     nowFrame.size.width = sizeWidth;
-    nowFrame.size.height = self.itemSize.height - self.sectionInset.top - self.sectionInset.bottom;
     attributes.frame = nowFrame;
     return attributes;
 }

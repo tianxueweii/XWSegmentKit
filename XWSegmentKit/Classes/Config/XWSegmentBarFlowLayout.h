@@ -11,6 +11,8 @@
 
 @interface XWSegmentBarFlowLayout : UICollectionViewFlowLayout
 
+/** 内边距 */
+@property (nonatomic) UIEdgeInsets padding;
 /** 关联的segmentBar */
 @property (nonatomic, weak) XWSegmentBar * segmentBar;
 /** 开始下标开始更新layout */

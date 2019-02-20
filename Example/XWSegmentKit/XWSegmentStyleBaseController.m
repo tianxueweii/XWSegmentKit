@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.collectionView];
     // Do any additional setup after loading the view.
 }

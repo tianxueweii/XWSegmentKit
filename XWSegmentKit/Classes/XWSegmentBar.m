@@ -398,7 +398,6 @@ NSString *const kXWSegmentBarItemKey = @"com.segmentKit.XWSegmentBarItemKey";
         _flowLayout = [[XWSegmentBarFlowLayout alloc] init];
         _flowLayout.segmentBar = self;
         _flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-        _flowLayout.itemSize = CGSizeMake(0, Segment_Bar_Height);
         
         if([_dataSource respondsToSelector:@selector(xw_segment_itemMinimumSpace)]){
             _flowLayout.minimumInteritemSpacing = [_dataSource xw_segment_itemMinimumSpace];
@@ -407,10 +406,13 @@ NSString *const kXWSegmentBarItemKey = @"com.segmentKit.XWSegmentBarItemKey";
         }
         
         if ([_dataSource respondsToSelector:@selector(xw_segment_padding)]) {
-            _flowLayout.sectionInset = [_dataSource xw_segment_padding];
+            _flowLayout.padding = [_dataSource xw_segment_padding];
         }else{
-            _flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
+            _flowLayout.padding = UIEdgeInsetsMake(0, 0, 0, 0);
         }
+        
+        // size.width给定初值，在flowLayout里再计算
+        _flowLayout.itemSize = CGSizeMake(1, Segment_Bar_Height - _flowLayout.padding.top - _flowLayout.padding.bottom);
         
         _mainScrollBar = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:_flowLayout];
         _mainScrollBar.delegate = self;
@@ -419,6 +421,9 @@ NSString *const kXWSegmentBarItemKey = @"com.segmentKit.XWSegmentBarItemKey";
         _mainScrollBar.showsHorizontalScrollIndicator = NO;
         _mainScrollBar.backgroundColor = [UIColor clearColor];
         [_mainScrollBar registerClass:[XWSegmentItem class] forCellWithReuseIdentifier:kXWSegmentBarItemKey];
+        if (@available(iOS 11, *)) {
+            _mainScrollBar.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
     }
     return _mainScrollBar;
 }

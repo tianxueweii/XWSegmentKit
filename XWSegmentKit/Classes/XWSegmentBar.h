@@ -101,7 +101,7 @@ typedef NS_ENUM(NSUInteger, XWSegmentBarAnchorLocation) {
 #pragma mark - 初始化
 
 /**
- 构造方法
+ 初始化方法
  初始化实例后请在需要的地方使用xw_segment_update方法加载导航
 
  @return ins
