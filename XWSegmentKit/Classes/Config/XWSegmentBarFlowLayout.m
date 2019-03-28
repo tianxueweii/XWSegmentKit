@@ -9,9 +9,7 @@
 #import "XWSegmentContext.h"
 
 @interface XWSegmentBarFlowLayout()
-
 @property (nonatomic, strong) NSMutableArray <UICollectionViewLayoutAttributes *>* layoutAttributes;
-
 @end
 
 @implementation XWSegmentBarFlowLayout
@@ -63,7 +61,7 @@
     }
 
     CGRect nowFrame = attributes.frame;
-    CGFloat sizeWidth = context.width + (context.maxWidth - context.width) * context.progress;
+    CGFloat sizeWidth = context.fixedWidth ?: context.width + (context.maxWidth - context.width) * context.progress;
     nowFrame.origin.x = origin;
     nowFrame.origin.y = self.padding.top;
     nowFrame.size.width = sizeWidth;

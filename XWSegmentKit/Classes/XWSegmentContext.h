@@ -26,6 +26,8 @@
  如果默认Font和选中状态Font字体不同，则采用selectedFont
  */
 @property (nonatomic, strong) UIFont *selectedFont;
+/** 固定宽度 */
+@property (nonatomic, assign) CGFloat fixedWidth;
 
 @end
 
